@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/utils.css')}}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/mobile.css')}}">
+{% endblock %}
+
+{% block body %}
+<nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/">
+                <span><img src="{{ url_for('static',filename='img/logo.png')}}" width="94px" alt=""></span>
+            </a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/createpost">Create Post</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="m-auto content max-width-1 my-2">
+        <div class="content-left">
+            <h1>iBlog - The heaven for bloggers</h1>
+            <p>iBlog is a website created by Sayantan Nandi which lets you create and upload articles which will be up on this website and you can get a good amount of reach from here!</p>
+            <p>iBlog helps people to connect with each other via creative writing, news articles, informative writing, etc. iBlog brings out the talent in the public and also helps them share important and knowledgeable ideas with one and another. I hope you like my website.</p>
+            <p>About the creator of iBlog : Sayantan Nandi is a programmer from Jamshedpur, India. Email me to come in contact with me.</p>
+        </div>
+        <div class="content-right">
+            <img src="{{ url_for('static',filename='img/home.svg')}}" alt="iBlog">
+        </div>
+    </div>
+
+    <!-- <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="home-articles max-width-1 m-auto font2">
+        <h2>Featured Articles</h2>
+        <div class="year-box adjust-year">
+            <div>
+                <h3>Year </h3>
+            </div>
+            <div>
+                <input type="radio" name="year" id=""> 2020
+            </div>
+            <div>
+                <input type="radio" name="year" id=""> 2021
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="{{ url_for('static',filename='img/3.png')}}" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="/blogpost">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+
+                <div>Author Name</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="{{ url_for('static',filename='img/1.png')}}" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="/blogpost">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+
+                <div>Author Name</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="{{ url_for('static',filename='img/2.png')}}" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="/blogpost">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+
+                <div>Author Name</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="{{ url_for('static',filename='img/1.png')}}" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="/blogpost">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+
+                <div>Author Name</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="{{ url_for('static',filename='img/11.svg')}}" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="/blogpost">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+
+                <div>Author Name</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="{{ url_for('static',filename='img/3.png')}}" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="/blogpost">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+
+                <div>Author Name</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="{{ url_for('static',filename='img/2.png')}}" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="/blogpost">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+
+                <div>Author Name</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="{{ url_for('static',filename='img/11.svg')}}" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="/blogpost">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+
+                <div>Author Name</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+
+    </div> -->
+    <br>
+    <br>
+    <br>
+    <div class="footer">
+        <p>Copyright &copy; iBlog.com </p>
+        
+    </div>
+{% endblock %}

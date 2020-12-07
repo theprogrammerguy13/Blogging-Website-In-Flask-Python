@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/utils.css')}}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/mobile.css')}}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/blogpost.css')}}">
+{% endblock %}
+
+{% block body %}
+<nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/">
+                <span><img src="{{url_for('static',filename='img/logo.png')}}" width="94px" alt=""></span>
+            </a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/createpost">Create Post</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <form action="/search" method="POST">
+                <input class="form-input" type="text" name="query" placeholder="Article Search">
+                <button class="btn" method="POST">Search</button>
+            </form>
+
+        </div>
+
+    </nav>
+    <div class="post-img">
+        <img src="{{url_for('static',filename='img/11.svg')}}" alt="">
+    </div>
+    <div class="m-auto blog-post-content max-width-2 m-auto my-2">
+        <h1 class="font1">{{ post.title }}</h1>
+        <div class="blogpost-meta">
+            <div class="author-info">
+                <div>
+                <b>
+                  {{ post.author_name }}
+                </b>
+                </div>
+                <div>{{ post.date_created.date() }}</div>
+            </div>
+            
+        </div>
+         <p class="font1">{{ post.content }}</p>
+    </div>
+    <br>
+    <br>
+    <div class="footer">
+        <p>Copyright &copy; iBlog.com </p>
+         
+    </div>
+{% endblock %}
